@@ -26,6 +26,7 @@ function EvidenceResult({ session, title, detail }: { session: EvidenceCase; tit
     <p>{session.id} · Gemini {session.report.model}</p>
     <div className="verify-history-status"><span>ITEM CHECKS</span><b>{session.report.conditions.filter(row => row.status === "PASS").length}/{session.report.conditions.length} PASS</b></div>
     <div className="verify-history-status"><span>FULL CHALLENGE</span><b>{session.report.challengeCodeStatus.replace("_", " ")}</b></div>
+    <div className="verify-history-status"><span>OVERALL AI RESULT</span><b>{session.report.overallStatus.replace("_", " ")}</b></div>
     <div className="verify-history-status"><span>PAYPAL CAPTURES</span><b>{session.captureId ? "1" : "0"}</b></div>
   </article>;
 }

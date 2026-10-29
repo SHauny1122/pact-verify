@@ -81,7 +81,7 @@
 - [x] Add an MIT license, safe `.env.example`, and a dedicated project-root Git ignore for secrets, local data, build outputs, and Vercel linkage
 - [ ] Record a concise end-to-end demo on the intended device, showing the six steps, the successful case, and both blocked outcomes without exposing credentials or private proof
 - [ ] Publish a public YouTube video under three minutes and add its link to the Devpost submission
-- [ ] Publish the dedicated `pact-verify` Git repository publicly with its visible MIT license, then verify a fresh clone builds
+- [x] Publish `SHauny1122/pact-verify` publicly on `main` with a visible MIT license; an anonymous fresh clone passed `npm ci`, all 23 tests, lint, and production build
 - [x] Choose public, account-free `/verify` on Vercel with Postgres/Blob storage and Sandbox-only financial actions
 - [x] Verify the public preview's hosted $10 authorization, private Blob proof, live Gemini blocked outcome, and zero PayPal captures
 - [ ] Verify hosted buyer approval and capture only if a further controlled test is authorized; it remains unverified and is not needed to preserve this blocked-path evidence
