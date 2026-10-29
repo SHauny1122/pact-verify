@@ -1,0 +1,118 @@
+/* A quieter PACT workspace. The established palette and type remain in identity.css. */
+.sidebar{width:232px}
+.main-region{margin-left:232px;width:calc(100% - 232px)}
+.brand{padding:27px 24px}
+.merchant-label{margin:32px 25px 19px;color:#e1ecda;font-size:12px;font-weight:600}
+.merchant-label small{display:block;margin-top:5px;color:#91a99d;font:400 10px 'Instrument Sans',sans-serif}
+.side-nav a{padding-left:25px;min-height:50px;font-size:13px;gap:14px}
+.sidebar-about{display:block;margin:32px 25px;color:#9eb4a8;font-size:11px;text-decoration:underline;text-decoration-color:#6a8977;text-underline-offset:4px}
+.sidebar-about:hover{color:#f4f8eb}
+.topbar{height:64px;padding:0 38px}
+.topbar-left strong{font-size:13px}
+.environment{background:none;border:0;padding:0;font:500 9px 'IBM Plex Mono',monospace;color:#5f806c;letter-spacing:0}
+.content{padding:35px 40px 26px;max-width:1250px}
+.footer{margin-top:70px}
+.footer span:last-child{text-transform:none;letter-spacing:0}
+
+.minimal-hero{display:block;min-height:0;margin:0;padding:44px 48px 49px;max-width:none}
+.minimal-hero:before{display:none}
+.minimal-hero:after{height:3px;background:#d8ed9f}
+.minimal-hero .hero-copy{max-width:900px}
+.minimal-hero .hero-kicker{color:#d8ed9f;font:700 12px 'IBM Plex Mono',monospace;letter-spacing:.15em}
+.minimal-hero h1{max-width:850px;margin:18px 0 16px;font-size:clamp(36px,4vw,57px);line-height:1.05;letter-spacing:-.06em}
+.minimal-hero .hero-explanation{max-width:650px;margin:0 0 31px;color:#d2e0d2;font-size:15px;line-height:1.55}
+.minimal-hero .hero-actions{gap:28px}
+.minimal-hero .btn-primary{min-height:47px;padding:13px 18px;font-size:13px}
+.minimal-hero .hero-secondary{border:0;padding:0;font-size:12px;color:#d1decf}
+.dashboard-disclosure{display:flex;gap:12px;margin:17px 1px 34px;color:#658172;font:500 10px 'IBM Plex Mono',monospace}
+.dashboard-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #d3dcd1;border-bottom:1px solid #d3dcd1;margin-bottom:39px;max-width:900px}
+.summary-metric{padding:21px 22px 23px 0;display:flex;flex-direction:column;gap:7px}
+.summary-metric+ .summary-metric{border-left:1px solid #d3dcd1;padding-left:27px}
+.summary-metric span{font-size:12px;color:#607869}
+.summary-metric strong{font-size:31px;line-height:1;font-weight:500;letter-spacing:-.05em;color:#254d3d}
+.recent-cases{max-width:900px}
+.recent-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.recent-heading h2{margin:0;font-size:23px;font-weight:500;letter-spacing:-.045em}
+.recent-heading .text-link{font:500 11px 'Instrument Sans',sans-serif}
+.recent-list{border-top:1px solid #d3dcd1}
+.recent-row{display:flex;align-items:center;gap:20px;border-bottom:1px solid #d3dcd1;padding:16px 2px;color:#244236}
+.recent-row:hover{background:#e6ede3}
+.recent-name{flex:1;min-width:0}
+.recent-name strong,.recent-name small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.recent-name strong{font-size:13px;font-weight:600}
+.recent-name small{font-size:10px;color:#78907e;margin-top:4px}
+.recent-name .recent-proof{font:500 9px 'IBM Plex Mono',monospace;color:#39775a;white-space:normal;line-height:1.5}
+.recent-empty{padding:22px 2px;color:#658172;font-size:12px}
+.recent-meta{display:flex;align-items:center;gap:22px;color:#5d7668;font-size:11px;white-space:nowrap}
+.source-real,.source-preview{font:500 9px 'IBM Plex Mono',monospace;color:#447458}
+.source-preview{color:#8a9487}
+.recent-row>svg{color:#799484}
+
+/* The transaction remains readable; the next action follows the details. */
+.detail-grid,.proposal-grid,.form-layout{grid-template-columns:minmax(0,1fr);max-width:790px;gap:0}
+.detail-grid .action-card{border-top:0;padding:22px 27px 26px}
+.detail-grid .action-card .card-icon,.detail-grid .action-card .section-kicker,.detail-grid .action-card h2,.detail-grid .action-card p{display:none}
+.detail-grid .action-card .btn{width:auto}
+.detail-grid .action-card .action-note{margin:14px 0 0}
+.form-layout .order-summary,.proposal-grid .context-card,.form-layout .context-card,.detail-grid .context-card{display:none}
+.form-layout .report-form,.proposal-main,.case-detail{padding:30px 34px}
+.form-layout .report-form h2{font-size:21px;font-weight:500;margin:0 0 22px}
+.offer-issue{margin:0 0 24px;padding-left:15px;border-left:2px solid #9bbf96;color:#587060;font:italic 18px/1.4 'Instrument Serif',serif}
+.proposal-main h2{margin-top:0}
+.proposal-head{justify-content:flex-start;margin-bottom:14px}
+.proposal-main>p{max-width:590px;margin:18px 0 25px}
+.analysis-wrap{max-width:790px;margin:0;padding:35px;text-align:left;border-top:0}
+.analysis-wrap>p{max-width:none;margin:0 0 25px;font-size:14px;color:#4d6855}
+.analysis-wrap [role="status"]:before{content:"";display:inline-block;width:9px;height:9px;margin-right:10px;border-radius:50%;background:#71a76e;box-shadow:0 0 0 4px #71a76e25;animation:assess-pulse 1.4s ease-in-out infinite}
+@keyframes assess-pulse{50%{opacity:.35}}
+.ai-confidence{font:500 11px 'IBM Plex Mono',monospace;color:#527863!important;margin-top:-7px!important}
+.analysis-wrap .btn{margin:0}
+.buyer-offer,.resolved-card{max-width:790px;margin:0;text-align:left;padding:34px;border-top:0}
+.buyer-offer .section-kicker{display:none}
+.buyer-offer h2{margin-top:0}
+.buyer-offer .offer-product{justify-content:flex-start}
+.buyer-offer .offer-actions,.resolved-card .resolved-actions{justify-content:flex-start}
+.buyer-offer .offer-footnote{display:block;max-width:580px;line-height:1.6}
+.resolved-card>p{margin:18px 0;max-width:600px}
+.resolved-card .resolved-numbers{margin:21px 0}
+.resolved-card .pact-refund-details{max-width:none;margin:0 0 23px}
+.case-tabs{gap:0;max-width:900px}
+.case-tabs button{padding:12px 14px}
+.case-list{max-width:900px}
+.list-foot{text-align:left;max-width:900px}
+.sub-heading{max-width:790px;margin-bottom:18px}
+.sub-heading .eyebrow{display:none}
+.sub-heading h1{font-size:clamp(31px,3vw,40px);margin-bottom:10px}
+.sub-heading p{font-size:13px;line-height:1.5}
+.preview-notice{display:inline-flex;align-items:center;max-width:790px;padding:7px 10px;margin-bottom:20px;border:0;border-left:2px solid #77a183;background:#e7ece3;font-size:10px}
+.preview-notice svg{width:13px;height:13px}
+.pact-checkout-grid{display:block;max-width:790px}
+.pact-checkout-aside{display:none}
+.pact-checkout-card{padding:30px 34px}
+.pact-checkout-card .section-kicker{display:none}
+
+@media(max-width:750px){
+  .sidebar{width:232px}.main-region{margin:0;width:100%}
+  .topbar{padding:0 18px}.content{padding:26px 18px}
+  .minimal-hero{padding:34px 30px 38px}
+  .journey-rail{overflow-x:auto;scrollbar-width:thin}
+  .journey-stages{justify-content:flex-start;width:max-content;flex:none}
+  .journey-stages>div{font-size:10px}
+  .journey-stages>div:after{width:14px;margin:0 7px}
+}
+@media(prefers-reduced-motion:reduce){.analysis-wrap [role="status"]:before{animation:none}}
+@media(max-width:520px){
+  .content{padding:20px 15px}.minimal-hero{padding:30px 23px 34px}
+  .minimal-hero h1{font-size:39px}.minimal-hero .hero-explanation{font-size:13px;margin-bottom:25px}
+  .minimal-hero .hero-actions{gap:19px}
+  .dashboard-disclosure{font-size:9px;gap:7px;margin-bottom:25px;flex-wrap:wrap}
+  .dashboard-summary{margin-bottom:32px}.summary-metric{padding:16px 8px 18px 0}.summary-metric+ .summary-metric{padding-left:18px}.summary-metric strong{font-size:27px}
+  .recent-heading h2{font-size:22px}.recent-meta{gap:8px;font-size:10px}.recent-meta .source-real,.recent-meta .source-preview{display:none}
+  .recent-row{gap:8px;padding:14px 2px}
+  .environment{font-size:7px}.live-dot{display:none}
+  .journey-stages>div{gap:4px;font-size:9px}
+  .journey-stages>div .journey-number{font-size:8px}
+  .journey-stages>div:after{width:9px;margin:0 5px}
+  .form-layout .report-form,.proposal-main,.case-detail,.buyer-offer,.resolved-card,.pact-checkout-card{padding:23px}
+  .resolved-numbers{gap:10px}.resolved-numbers strong{font-size:20px}
+}
